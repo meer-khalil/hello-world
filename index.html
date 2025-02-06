@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal CV Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <img src="images/round.png" height="200">
-    <h1>Khalil Ahmad</h1>
-    <p>I ❤️ Tea</p>
-    <hr>
-    <h3>Education</h3>
-    <ul type='circle'>
-        <li>
-            <p><strong>Matriculation:</strong>I have done it from lahore.</p>
-        </li>
-        <li>
-            <p><strong>Intermediate:</strong>I have done it from Mianwali</p>
-        </li>
-        <li><strong>Graduation:</strong>Curruntly studying at Sukkur IBA University in Coputer Science.</li>
-    </ul>
-    <hr>
-    <h3>Skills</h3>
-    <table>
 
-        <tbody>
-            <tr>
-                <td>Java</td>
-                <td>🌟🌟🌟🌟🌟</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>🌟🌟🌟🌟🌟</td>
-            </tr>
-            <tr>
-                <td>Web Development</td>
-                <td>🌟🌟🌟🌟🌟</td>
-            </tr>
-            <tr>
-                <td>Data Scientist</td>
-                <td>🌟🌟🌟</td>
-            </tr>
-            <tr>
-                <td>Communication</td>
-                <td>🌟🌟🌟🌟</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Experience</h3>
-    <table>
-        <thead>
-            <th>Date</th>
-            <th>Work</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2019-2021</td>
-                <td>Work at Sukkur IBA University Software House as a Java Developer</td>
-            </tr>
-        </tbody>
-    </table>
-    <h3><a href="contact.html">Contact Me</a></h3>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-2xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <div class="text-center">
+            <img src="images/round.png" class="w-32 h-32 mx-auto rounded-full border-4 border-gray-300">
+            <h1 class="text-3xl font-bold mt-4">Meer Khalil</h1>
+            <p class="text-lg text-gray-600">I ❤️ Tea</p>
+        </div>
+        <hr class="my-4 border-gray-300">
 
+        <h3 class="text-xl font-semibold">Education</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <div class="p-4 border rounded-lg shadow bg-white">
+                <h4 class="text-lg font-semibold">Matriculation</h4>
+                <p><strong>School:</strong> Lahore High School</p>
+                <p><strong>Total Marks:</strong> 1100</p>
+                <p><strong>Gained Marks:</strong> 990</p>
+            </div>
+            <div class="p-4 border rounded-lg shadow bg-white">
+                <h4 class="text-lg font-semibold">Intermediate</h4>
+                <p><strong>College:</strong> Mianwali College</p>
+                <p><strong>Total Marks:</strong> 1100</p>
+                <p><strong>Gained Marks:</strong> 950</p>
+            </div>
+            <div class="p-4 border rounded-lg shadow bg-white">
+                <h4 class="text-lg font-semibold">Graduation</h4>
+                <p><strong>University:</strong> Sukkur IBA University</p>
+                <p><strong>Degree:</strong> Computer Science</p>
+                <p><strong>Current CGPA:</strong> 3.7</p>
+            </div>
+        </div>
+
+
+        <hr class="my-4 border-gray-300">
+        <h3 class="text-xl font-semibold">Skills</h3>
+        <table class="w-full border-collapse mt-2">
+            <tbody>
+                <tr class="border-b">
+                    <td class="py-2">Java</td>
+                    <td class="py-2">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2">JavaScript</td>
+                    <td class="py-2">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2">Python</td>
+                    <td class="py-2">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2">Web Development</td>
+                    <td class="py-2">⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2">Data Science</td>
+                    <td class="py-2">⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td class="py-2">Communication</td>
+                    <td class="py-2">⭐⭐⭐⭐</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="my-4 border-gray-300">
+        <h3 class="text-xl font-semibold">Experience</h3>
+        <table class="w-full border-collapse mt-2">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="py-2 px-4 text-left">Date</th>
+                    <th class="py-2 px-4 text-left">Work</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b">
+                    <td class="py-2 px-4">2019-2021</td>
+                    <td class="py-2 px-4">Worked at Sukkur IBA University Software House as a Java Developer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-center mt-6">
+            <a href="contact.html" class="text-blue-600 hover:underline text-lg">Contact Me</a>
+        </div>
+    </div>
 </body>
+
 </html>

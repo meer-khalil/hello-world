@@ -1,43 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table td strong {
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #5C6BC0;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3f4b92;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Contact Details</h1>
-    <table>
-        <tr>
-            <td>
-                <strong>Phone:</strong>
-            </td>
-            <td>03493212647</td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Email:</strong>
-            </td>
-            <td>
-                adnan3212647@gmail.com
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Address:</strong>
-            </td>
-            <td>Chapri Tehsil Isa Khel, District Mianwali, Punjab Pakistan</td>
-        </tr>
-    </table>
+    <div class="container">
+        <h1>Contact Details</h1>
+        <table>
+            <tr>
+                <td><strong>Phone:</strong></td>
+                <td>03493212647</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>meerkhalil3212647@gmail.com</td>
+            </tr>
+            <tr>
+                <td><strong>Address:</strong></td>
+                <td>Chapri Tehsil Isa Khel, District Mianwali, Punjab Pakistan</td>
+            </tr>
+        </table>
 
-    <form action="index.html">
-        <label><strong>Your Name:</strong></label>
-        <input type="text"><br>
+        <h2>Send a Message</h2>
+        <form action="index.html">
+            <label><strong>Your Name:</strong></label>
+            <input type="text" name="name" required>
 
-        <label><strong>Your Email:</strong></label>
-        <input type="email"><br>
+            <label><strong>Your Email:</strong></label>
+            <input type="email" name="email" required>
 
-        <label><strong>Your Message:</strong></label><br>
-        <textarea rows="10" cols="30"></textarea>
-        <input type="submit">
-    </form>
+            <label><strong>Your Message:</strong></label>
+            <textarea rows="5" name="message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+        <div class="text-center mt-6">
+            <a href="index.html" class="text-blue-600 hover:underline text-lg">Home</a>
+        </div>
+    </div>
 </body>
+
 </html>
